@@ -1,0 +1,116 @@
+
+ul{
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+.footer{
+    background-color: #93B0D0;
+    color: $white;
+    .footer__inner{
+        margin-bottom: 100px;
+        font-family: 'Ubuntu', sans-serif;
+        .footer__adress{
+            font-weight: 300;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            // align-items: center;
+        }
+        .footer__row{
+
+            font-weight: 300;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            @include very-small{
+                display: block;
+            }
+            .footer__column{
+                width: 30%;
+                line-height: 30px;
+                @include very-small{
+                    width: 100%;
+                }
+                .footer__title{
+                    font-size: 26px;
+                    color: $text-brown-1;
+                    font-weight: 700;
+                }
+            }
+            .footer__col{
+                width: 15%;
+                line-height: 30px;
+                @include ex-small{
+                    width: 100%;
+                }
+                @include very-small{
+                    width: 100%;
+                }   
+            }
+            .footer__img{
+                display: block;
+                width: 31%;
+                line-height: 30px;
+                @include very-small{
+                    width: 100%;
+                }
+                ul{
+                    padding: 0;
+                }
+                .footer__col_img{
+                   
+                    display: block;
+                    align-items: center;
+                    p{
+                       margin: 0;
+
+                    }
+                    .col__img1{
+                        background: url(../../img/news__card-1.png);
+                        background-size: cover;
+                        width: 95px;
+                        height: 54px;
+                    }
+                    .col__img2{
+                        background: url(../../img/news__card-2.png);
+                        background-size: cover;
+                        width: 95px;
+                        height: 54px;
+                    }
+                }
+            }
+        }
+    }
+}
+.footer__theme{
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: underline dashed;
+}
+.footer__img_theme{
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: underline dashed;
+}
+.footer__col_date{
+    color: $text-brown-1;
+}
+.footer__bottom{
+    background: rgba(255, 255, 255, 0.2);
+}
+.footer__bottom_inner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    a{
+        padding: 10px;
+    }
+}
+.footer__title{
+    a:hover{
+        color: inherit;
+    }
+}
